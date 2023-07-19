@@ -1,0 +1,24 @@
+.link{
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px auto;
+    display: block;
+    width: 170px;
+}
+.link:before{
+    content: "";
+    position:absolute;
+    bottom:-3px;
+    left:0;
+    height: 3px;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background-color: #9812ca;
+}
+.link:hover::before{
+    transform: scaleX(1);
+}
